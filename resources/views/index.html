@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <input type="text" id="myInput" />
+        <button onclick="getValue()">Click me</button>
+        <p id="output"></p>
+        <script>
+            function getValue() {
+                const inputElement = document.getElementById("myInput");
+                const inputValue = inputElement.value;
+                document.getElementById("output").textContent =
+                    "Input value: " + inputValue;
+            }
+        </script>
+    </body>
+</html>
