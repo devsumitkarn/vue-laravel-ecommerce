@@ -70,8 +70,8 @@
                 <div class="card-body">
                     <div class="d-flex align-items-center">
                         <div>
-                            <p class="mb-0 text-secondary font-14">Total Orders</p>
-                            <h5 class="my-0">8052</h5>
+                            <p class="mb-0 text-secondary font-14">Total User</p>
+                            <h5 class="my-0">{{ Auth::user()->count() }}</h5>
                         </div>
                         <div class="text-primary ms-auto font-30"><i class='bx bx-cart-alt'></i>
                         </div>
@@ -316,7 +316,7 @@
                     <tbody>
                         <tr>
                             <td>Iphone 5</td>
-                            <td><img src="assets/images/products/01.png" class="product-img-2" alt="product img"></td>
+                            <td><img src="{{ url('rocker/assets/images/products/01.png') }}" class="product-img-2" alt="product img"></td>
                             <td>#9405822</td>
                             <td><span class="badge bg-gradient-quepal text-white shadow-sm w-100">Paid</span>
                             </td>
@@ -332,7 +332,7 @@
 
                         <tr>
                             <td>Earphone GL</td>
-                            <td><img src="assets/images/products/02.png" class="product-img-2" alt="product img"></td>
+                            <td><img src="{{ url('rocker/assets/images/products/02.png') }}" class="product-img-2" alt="product img"></td>
                             <td>#8304620</td>
                             <td><span class="badge bg-gradient-blooker text-white shadow-sm w-100">Pending</span>
                             </td>
@@ -348,7 +348,7 @@
 
                         <tr>
                             <td>HD Hand Camera</td>
-                            <td><img src="assets/images/products/03.png" class="product-img-2" alt="product img"></td>
+                            <td><img src="{{ url('rocker/assets/images/products/03.png') }}" class="product-img-2" alt="product img"></td>
                             <td>#4736890</td>
                             <td><span class="badge bg-gradient-bloody text-white shadow-sm w-100">Failed</span>
                             </td>
@@ -364,7 +364,7 @@
 
                         <tr>
                             <td>Clasic Shoes</td>
-                            <td><img src="assets/images/products/04.png" class="product-img-2" alt="product img"></td>
+                            <td><img src="{{ url('rocker/assets/images/products/04.png') }}" class="product-img-2" alt="product img"></td>
                             <td>#8543765</td>
                             <td><span class="badge bg-gradient-quepal text-white shadow-sm w-100">Paid</span>
                             </td>
@@ -379,7 +379,7 @@
                         </tr>
                         <tr>
                             <td>Sitting Chair</td>
-                            <td><img src="assets/images/products/06.png" class="product-img-2" alt="product img"></td>
+                            <td><img src="{{ url('rocker/assets/images/products/06.png') }}" class="product-img-2" alt="product img"></td>
                             <td>#9629240</td>
                             <td><span class="badge bg-gradient-blooker text-white shadow-sm w-100">Pending</span>
                             </td>
@@ -394,7 +394,7 @@
                         </tr>
                         <tr>
                             <td>Hand Watch</td>
-                            <td><img src="assets/images/products/05.png" class="product-img-2" alt="product img"></td>
+                            <td><img src="{{ url('rocker/assets/images/products/05.png') }}" class="product-img-2" alt="product img"></td>
                             <td>#8506790</td>
                             <td><span class="badge bg-gradient-bloody text-white shadow-sm w-100">Failed</span>
                             </td>

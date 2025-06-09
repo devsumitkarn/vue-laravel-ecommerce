@@ -3,7 +3,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--favicon-->
-    <link rel="icon" href="assets/images/favicon-32x32.png" type="image/png" />
+    <link rel="icon" href="{{ url('rocker/assets/images/favicon-32x32.png') }}" type="image/png" />
     <!--plugins-->
     <link href="{{ url('rocker/assets/plugins/vectormap/jquery-jvectormap-2.0.2.css') }}" rel="stylesheet" />
     <link href="{{ url('rocker/assets/plugins/simplebar/css/simplebar.css') }}" rel="stylesheet" />
@@ -22,5 +22,9 @@
     <link rel="stylesheet" href="{{ url('rocker/assets/css/dark-theme.css') }}" />
     <link rel="stylesheet" href="{{ url('rocker/assets/css/semi-dark.css') }}" />
     <link rel="stylesheet" href="{{ url('rocker/assets/css/header-colors.css') }}" />
-    <title>Rocker - Bootstrap 5 Admin Dashboard Template</title>
+    <link href="{{ url('rocker/assets/plugins/input-tags/css/tagsinput.css') }}" rel="stylesheet" />
+    <link href="{{ url('rocker/assets/plugins/datatable/css/dataTables.bootstrap5.min.css') }}" rel="stylesheet" />
+    <link href="{{ url('rocker/assets/plugins/select2/css/select2.min.css') }}" rel="stylesheet" />
+	<link href="{{ url('rocker/assets/plugins/select2/css/select2-bootstrap4.css') }}" rel="stylesheet" />
+    <title>@yield('title')</title>
 </head>

@@ -43,23 +43,24 @@
                                         </p>
                                     </div>
                                     <div class="d-grid">
-                                        <a class="btn my-4 shadow-sm btn-white" href="javascript:;"> <span
+                                        <a class="btn my-4 shadow-sm btn-white" href="{{ route('google.login') }}"> <span
                                                 class="d-flex justify-content-center align-items-center">
                                                 <img class="me-2" src="{{ url('rocker/assets/images/icons/search.svg') }}" width="16"
                                                     alt="Image Description">
                                                 <span>Sign in with Google</span>
                                             </span>
-                                        </a> <a href="javascript:;" class="btn btn-facebook"><i
-                                                class="bx bxl-facebook"></i>Sign in with Facebook</a>
+                                        </a> 
                                     </div>
                                     <div class="login-separater text-center mb-4"> <span>OR SIGN IN WITH EMAIL</span>
                                         <hr />
                                     </div>
                                     <div class="form-body">
-                                        <form class="row g-3">
+                                        <form class="row g-3" method="POST" action="{{ route('login') }}">
+                                            @csrf
+                                            @method('POST')
                                             <div class="col-12">
                                                 <label for="inputEmailAddress" class="form-label">Email Address</label>
-                                                <input type="email" class="form-control" id="inputEmailAddress"
+                                                <input type="email" class="form-control" name="email" id="inputEmailAddress"
                                                     placeholder="Email Address">
                                             </div>
                                             <div class="col-12">
@@ -67,7 +68,7 @@
                                                     Password</label>
                                                 <div class="input-group" id="show_hide_password">
                                                     <input type="password" class="form-control border-end-0"
-                                                        id="inputChoosePassword" value="12345678"
+                                                        id="inputChoosePassword" name="password"
                                                         placeholder="Enter Password"> <a href="javascript:;"
                                                         class="input-group-text bg-transparent"><i
                                                             class='bx bx-hide'></i></a>

@@ -4,8 +4,64 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0c51ab4475921942fc427823f1e90f1e",
+    "content-hash": "9e5c686d326ec62fd38979edc55aab30",
     "packages": [
+        {
+            "name": "anandsiddharth/laravel-paytm-wallet",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/anandsiddharth/laravel-paytm-wallet.git",
+                "reference": "5342add0719e9c5ca94fdd13f766e6a810f2ef45"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/anandsiddharth/laravel-paytm-wallet/zipball/5342add0719e9c5ca94fdd13f766e6a810f2ef45",
+                "reference": "5342add0719e9c5ca94fdd13f766e6a810f2ef45",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": ">=8.0",
+                "illuminate/support": ">=8.0",
+                "php": ">=7.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "PaytmWallet": "Anand\\LaravelPaytmWallet\\Facades\\PaytmWallet"
+                    },
+                    "providers": [
+                        "Anand\\LaravelPaytmWallet\\PaytmWalletServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Anand\\LaravelPaytmWallet\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anand Siddharth",
+                    "email": "anandsiddharth21@gmail.com"
+                }
+            ],
+            "description": "Integrate paytm wallet easily with this package. This package uses official Paytm PHP SDK's",
+            "keywords": [
+                "laravel",
+                "paytm wallet"
+            ],
+            "support": {
+                "issues": "https://github.com/anandsiddharth/laravel-paytm-wallet/issues",
+                "source": "https://github.com/anandsiddharth/laravel-paytm-wallet/tree/v2.0.0"
+            },
+            "time": "2020-10-28T06:22:20+00:00"
+        },
         {
             "name": "brick/math",
             "version": "0.12.3",
@@ -209,6 +265,58 @@
                 "source": "https://github.com/dflydev/dflydev-dot-access-data/tree/v3.0.3"
             },
             "time": "2024-07-08T12:26:09+00:00"
+        },
+        {
+            "name": "dipesh79/laravel-phonepe",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Dipesh79/LaravelPhonePe.git",
+                "reference": "286f3b26f1ab86f68543e1d40776b1f97cb14ca2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Dipesh79/LaravelPhonePe/zipball/286f3b26f1ab86f68543e1d40776b1f97cb14ca2",
+                "reference": "286f3b26f1ab86f68543e1d40776b1f97cb14ca2",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Dipesh79\\LaravelPhonePe\\LaravelPhonePeServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Dipesh79\\LaravelPhonePe\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dipesh79",
+                    "email": "dipeshkhanal79@gmail.com",
+                    "homepage": "https://www.khanaldipesh.com.np",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Laravel PhonePe - Laravel PhonePe Payment Integration Library",
+            "support": {
+                "issues": "https://github.com/Dipesh79/LaravelPhonePe/issues",
+                "source": "https://github.com/Dipesh79/LaravelPhonePe/tree/1.0.1"
+            },
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/dipeshkhanal",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2024-05-04T04:22:30+00:00"
         },
         {
             "name": "doctrine/inflector",
@@ -3787,6 +3895,89 @@
                 }
             ],
             "time": "2024-04-27T21:32:50+00:00"
+        },
+        {
+            "name": "spatie/laravel-permission",
+            "version": "6.18.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-permission.git",
+                "reference": "3c05f04d12275dfbe462c8b4aae3290e586c2dde"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-permission/zipball/3c05f04d12275dfbe462c8b4aae3290e586c2dde",
+                "reference": "3c05f04d12275dfbe462c8b4aae3290e586c2dde",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/auth": "^8.12|^9.0|^10.0|^11.0|^12.0",
+                "illuminate/container": "^8.12|^9.0|^10.0|^11.0|^12.0",
+                "illuminate/contracts": "^8.12|^9.0|^10.0|^11.0|^12.0",
+                "illuminate/database": "^8.12|^9.0|^10.0|^11.0|^12.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "laravel/passport": "^11.0|^12.0",
+                "laravel/pint": "^1.0",
+                "orchestra/testbench": "^6.23|^7.0|^8.0|^9.0|^10.0",
+                "phpunit/phpunit": "^9.4|^10.1|^11.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Spatie\\Permission\\PermissionServiceProvider"
+                    ]
+                },
+                "branch-alias": {
+                    "dev-main": "6.x-dev",
+                    "dev-master": "6.x-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Spatie\\Permission\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Permission handling for Laravel 8.0 and up",
+            "homepage": "https://github.com/spatie/laravel-permission",
+            "keywords": [
+                "acl",
+                "laravel",
+                "permission",
+                "permissions",
+                "rbac",
+                "roles",
+                "security",
+                "spatie"
+            ],
+            "support": {
+                "issues": "https://github.com/spatie/laravel-permission/issues",
+                "source": "https://github.com/spatie/laravel-permission/tree/6.18.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/spatie",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-05-14T03:32:23+00:00"
         },
         {
             "name": "symfony/clock",

@@ -50,49 +50,47 @@
                                                     width="16" alt="Image Description">
                                                 <span>Sign Up with Google</span>
                                             </span>
-                                        </a> <a href="javascript:;" class="btn btn-facebook"><i
-                                                class="bx bxl-facebook"></i>Sign Up with Facebook</a>
+                                        </a>
                                     </div>
                                     <div class="login-separater text-center mb-4"> <span>OR SIGN UP WITH EMAIL</span>
                                         <hr />
                                     </div>
                                     <div class="form-body">
-                                        <form class="row g-3">
-                                            <div class="col-sm-6">
+                                        <form class="row g-3" method="POST" action="{{ route('register') }}">
+                                            @csrf
+                                            @method('POST')
+                                            <div class="col-sm-12">
                                                 <label for="inputFirstName" class="form-label">First Name</label>
-                                                <input type="email" class="form-control" id="inputFirstName"
+                                                <input type="text" class="form-control" name="name" id="inputFirstName"
                                                     placeholder="Jhon">
                                             </div>
-                                            <div class="col-sm-6">
-                                                <label for="inputLastName" class="form-label">Last Name</label>
-                                                <input type="email" class="form-control" id="inputLastName"
-                                                    placeholder="Deo">
-                                            </div>
+                                            
                                             <div class="col-12">
                                                 <label for="inputEmailAddress" class="form-label">Email Address</label>
-                                                <input type="email" class="form-control" id="inputEmailAddress"
+                                                <input type="email" class="form-control" name="email" id="inputEmailAddress"
                                                     placeholder="example@user.com">
                                             </div>
-                                            <div class="col-12">
+                                            <div class="col-6">
                                                 <label for="inputChoosePassword" class="form-label">Password</label>
                                                 <div class="input-group" id="show_hide_password">
                                                     <input type="password" class="form-control border-end-0"
-                                                        id="inputChoosePassword" value="12345678"
+                                                        id="inputChoosePassword" name="password"
                                                         placeholder="Enter Password"> <a href="javascript:;"
                                                         class="input-group-text bg-transparent"><i
                                                             class='bx bx-hide'></i></a>
                                                 </div>
                                             </div>
-                                            <div class="col-12">
-                                                <label for="inputSelectCountry" class="form-label">Country</label>
-                                                <select class="form-select" id="inputSelectCountry"
-                                                    aria-label="Default select example">
-                                                    <option selected>India</option>
-                                                    <option value="1">United Kingdom</option>
-                                                    <option value="2">America</option>
-                                                    <option value="3">Dubai</option>
-                                                </select>
+                                            <div class="col-6">
+                                                <label for="inputChoosePassword" class="form-label">Password</label>
+                                                <div class="input-group" id="show_hide_confirm_password">
+                                                    <input type="password" class="form-control border-end-0"
+                                                        id="inputChoosePassword" name="password_confirmation"
+                                                        placeholder="Enter Password"> <a href="javascript:;"
+                                                        class="input-group-text bg-transparent"><i
+                                                            class='bx bx-hide'></i></a>
+                                                </div>
                                             </div>
+                                            
                                             <div class="col-12">
                                                 <div class="form-check form-switch">
                                                     <input class="form-check-input" type="checkbox"
@@ -139,6 +137,18 @@
                     $('#show_hide_password input').attr('type', 'text');
                     $('#show_hide_password i').removeClass("bx-hide");
                     $('#show_hide_password i').addClass("bx-show");
+                }
+            });
+            $("#show_hide_confirm_password a").on('click', function(event) {
+                event.preventDefault();
+                if ($('#show_hide_confirm_password input').attr("type") == "text") {
+                    $('#show_hide_confirm_password input').attr('type', 'password');
+                    $('#show_hide_confirm_password i').addClass("bx-hide");
+                    $('#show_hide_confirm_password i').removeClass("bx-show");
+                } else if ($('#show_hide_confirm_password input').attr("type") == "password") {
+                    $('#show_hide_confirm_password input').attr('type', 'text');
+                    $('#show_hide_confirm_password i').removeClass("bx-hide");
+                    $('#show_hide_confirm_password i').addClass("bx-show");
                 }
             });
         });
